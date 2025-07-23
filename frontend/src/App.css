@@ -1,34 +1,219 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --ash-dark: #1B1B1E;
+  --ember-red: #9A2B20;
+  --aged-gold: #C2A45F;
+  --armor-grey: #494D53;
+  --spectral-blue: #35658F;
+  --parchment-beige: #D9CBA3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--ash-dark);
+  color: var(--parchment-beige);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.App-link {
-    color: #61dafb;
+.App {
+  min-height: 100vh;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ash-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--aged-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ember-red);
+}
+
+/* Typography classes */
+.title-font {
+  font-family: 'Cinzel', serif;
+}
+
+.body-font {
+  font-family: 'Lora', serif;
+}
+
+.interface-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Gradient backgrounds */
+.gradient-ash {
+  background: linear-gradient(135deg, var(--ash-dark) 0%, #2a2a2f 100%);
+}
+
+.gradient-ember {
+  background: linear-gradient(135deg, var(--ember-red) 0%, #b83228 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--aged-gold) 0%, #d4b76f 100%);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(217, 203, 163, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(217, 203, 163, 0.2);
+  border-radius: 12px;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(194, 164, 95, 0.3);
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--aged-gold);
+  color: var(--ash-dark);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover {
+  background: var(--ember-red);
+  color: var(--parchment-beige);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(154, 43, 32, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--aged-gold);
+  border: 2px solid var(--aged-gold);
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-secondary:hover {
+  background: var(--aged-gold);
+  color: var(--ash-dark);
+  transform: translateY(-2px);
+}
+
+/* Text utilities */
+.text-gold {
+  color: var(--aged-gold);
+}
+
+.text-ember {
+  color: var(--ember-red);
+}
+
+.text-spectral {
+  color: var(--spectral-blue);
+}
+
+.text-parchment {
+  color: var(--parchment-beige);
+}
+
+/* Layout utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Texture overlays */
+.texture-overlay {
+  position: relative;
+}
+
+.texture-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(217, 203, 163, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  pointer-events: none;
 }
