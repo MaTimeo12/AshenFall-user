@@ -65,7 +65,7 @@ const HomePage = () => {
             {/* Logo Symbol */}
             <div className="mb-8 float">
               <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-gold rounded-full shadow-2xl">
-                <span className="text-4xl">🌳</span>
+                <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'40px',maxWidth:'80%',objectFit:'contain',display:'block',margin:'0 auto'}} />
               </div>
             </div>
 

@@ -21,13 +21,13 @@ const TikTokTemplates = () => {
           {template.name === 'Teaser de Nouveauté' && (
             <div className="h-full flex flex-col justify-between p-4 text-center">
               <div className="flex-1 flex items-center justify-center">
-                <div className="text-3xl">🌳</div>
+                <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'40px',maxWidth:'80%',objectFit:'contain',display:'block',margin:'0 auto'}} />
               </div>
               <div className="space-y-2">
                 <div className="bg-ember px-3 py-1 rounded-full">
                   <span className="interface-font text-xs text-gold font-bold">NOUVEAUTÉ !</span>
                 </div>
-                <div className="title-font text-gold text-sm font-semibold">ASHENFALL</div>
+                {/* <div className="title-font text-gold text-sm font-semibold">ASHENFALL</div> */}
                 <div className="interface-font text-parchment text-xs">Nouvelle mise à jour</div>
               </div>
               <div className="interface-font text-xs text-spectral">Disponible maintenant</div>
@@ -212,7 +212,7 @@ const TikTokTemplates = () => {
                         <div className="h-full flex flex-col justify-between p-6 text-center">
                           <div className="flex-1 flex items-center justify-center">
                             <div className="space-y-4">
-                              <div className="text-4xl animate-pulse">🌳</div>
+                              <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'48px',maxWidth:'90%',objectFit:'contain',display:'block',margin:'0 auto'}} className="animate-pulse" />
                               <div className="w-16 h-1 bg-gradient-ember mx-auto rounded"></div>
                             </div>
                           </div>

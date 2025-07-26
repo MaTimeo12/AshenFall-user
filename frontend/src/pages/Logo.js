@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ashenFallLogo from '../components/AshenFall logo.png';
 import { logoVariations } from '../data/mockData';
 
 const Logo = () => {
@@ -18,15 +19,15 @@ const Logo = () => {
         } bg-gradient-to-br from-ash-dark to-armor-grey rounded-lg border-2 border-aged-gold border-opacity-30`}>
           {variation.format === 'Carré' ? (
             <div className="text-center">
-              <div className="text-3xl mb-1">🌳</div>
-              <div className="title-font text-xs text-gold font-semibold">AF</div>
+              <img src={ashenFallLogo} alt="AshenFall logo" className="h-8 mx-auto mb-1" />
+              {/* <div className="title-font text-xs text-gold font-semibold">AF</div> */}
             </div>
           ) : (
-            <div className="flex items-center space-x-3">
-              <div className="text-3xl">🌳</div>
-              <div className="title-font text-lg text-gold font-semibold tracking-wider">
+            <div className="flex items-center justify-center w-full">
+              <img src={ashenFallLogo} alt="AshenFall logo" className="h-8 mx-auto" />
+              {/* <div className="title-font text-lg text-gold font-semibold tracking-wider">
                 ASHENFALL
-              </div>
+              </div> */}
             </div>
           )}
         </div>
@@ -94,10 +95,10 @@ const Logo = () => {
             <div className="mb-8">
               <div className="inline-flex items-center justify-center w-48 h-48 bg-gradient-to-br from-ash-dark via-armor-grey to-ash-dark rounded-full border-4 border-aged-gold shadow-2xl mb-6">
                 <div className="text-center">
-                  <div className="text-6xl mb-2 filter drop-shadow-lg">🌳</div>
-                  <div className="title-font text-2xl text-gold font-bold tracking-widest">
+                  <img src={ashenFallLogo} alt="AshenFall logo" className="h-16 mb-2 filter drop-shadow-lg mx-auto" />
+                  {/* <div className="title-font text-2xl text-gold font-bold tracking-widest">
                     ASHENFALL
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -162,10 +163,10 @@ const Logo = () => {
                     </div>
                     
                     <div className="relative text-center">
-                      <div className="text-4xl mb-2">🌳</div>
-                      <div className="title-font text-xl text-gold font-bold tracking-wider">
+                      <img src={ashenFallLogo} alt="AshenFall logo" className="h-10 mb-2 mx-auto" />
+                      {/* <div className="title-font text-xl text-gold font-bold tracking-wider">
                         ASHENFALL
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -218,7 +219,7 @@ const Logo = () => {
                 {/* Correct examples */}
                 <div className="p-4 bg-ash-dark bg-opacity-30 rounded-lg">
                   <div className="flex items-center space-x-3 mb-2">
-                    <div className="text-lg">🌳</div>
+                    <img src={ashenFallLogo} alt="AshenFall logo" className="h-6" />
                     <div className="title-font text-sm text-gold font-semibold">ASHENFALL</div>
                   </div>
                   <p className="interface-font text-xs text-parchment">Proportions respectées</p>
@@ -226,7 +227,7 @@ const Logo = () => {
                 
                 <div className="p-4 bg-spectral bg-opacity-10 rounded-lg">
                   <div className="flex items-center space-x-3 mb-2">
-                    <div className="text-lg text-parchment">🌳</div>
+                    <img src={ashenFallLogo} alt="AshenFall logo" className="h-6" />
                     <div className="title-font text-sm text-parchment font-semibold">ASHENFALL</div>
                   </div>
                   <p className="interface-font text-xs text-parchment">Version monochrome</p>
@@ -252,7 +253,7 @@ const Logo = () => {
                 {/* Incorrect examples */}
                 <div className="p-4 bg-ember bg-opacity-20 rounded-lg border border-ember border-opacity-30">
                   <div className="flex items-center space-x-3 mb-2">
-                    <div className="text-lg transform scale-x-150">🌳</div>
+                    <img src={ashenFallLogo} alt="AshenFall logo" className="h-6 transform scale-x-150" />
                     <div className="title-font text-sm text-gold font-semibold">ASHENFALL</div>
                   </div>
                   <p className="interface-font text-xs text-ember">Logo déformé</p>

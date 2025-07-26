@@ -34,7 +34,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover-lift">
             <div className="w-8 h-8 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <span className="text-ash-dark font-bold">🌳</span>
+              <img src={require('./AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'block',margin:'0 auto'}} />
             </div>
             <span className="title-font text-xl text-gold font-semibold">AshenFall</span>
           </Link>

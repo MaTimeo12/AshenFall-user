@@ -279,7 +279,7 @@ const Guidelines = () => {
                 <div className="space-y-4">
                   <div className="p-4 bg-ash-dark rounded-lg border border-aged-gold border-opacity-30">
                     <div className="flex items-center space-x-3 mb-3">
-                      <span className="text-2xl">🌳</span>
+                      <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'inline-block',verticalAlign:'middle'}} />
                       <span className="title-font text-lg text-gold font-semibold">ASHENFALL</span>
                     </div>
                     <h4 className="title-font text-lg text-spectral font-semibold mb-2">
@@ -312,7 +312,7 @@ const Guidelines = () => {
                 <div className="space-y-4">
                   <div className="p-4 bg-red-900 bg-opacity-20 rounded-lg border border-ember border-opacity-50">
                     <div className="flex items-center space-x-3 mb-3">
-                      <span className="text-2xl transform scale-x-150">🌳</span>
+                      <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'inline-block',verticalAlign:'middle',transform:'scaleX(1.5)'}} />
                       <span className="text-lg text-red-400 font-bold" style={{fontFamily: 'Arial'}}>
                         ASHENFALL
                       </span>
