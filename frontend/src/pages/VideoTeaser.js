@@ -61,7 +61,7 @@ const VideoTeaser = () => {
           )}
           {index === 1 && (
             <div className="h-full bg-gradient-gold flex items-center justify-center">
-              <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'block',margin:'0 auto'}} />
+              <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'block',margin:'0 auto'}} />
             </div>
           )}
           {index === 2 && (
@@ -134,7 +134,7 @@ const VideoTeaser = () => {
                 {currentScene === 1 && (
                   <div className="h-full bg-gradient-to-radial from-aged-gold via-ash-dark to-ash-dark flex items-center justify-center">
                     <div className="text-center space-y-6">
-                      <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'64px',maxWidth:'90%',objectFit:'contain',display:'block',margin:'0 auto'}} className="animate-pulse" />
+                      <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{height:'64px',maxWidth:'90%',objectFit:'contain',display:'block',margin:'0 auto'}} className="animate-pulse" />
                       <div className="title-font text-4xl text-gold font-bold tracking-wider">
                         ASHENFALL
                       </div>
@@ -186,7 +186,7 @@ const VideoTeaser = () => {
                   <div className="h-full bg-gradient-to-t from-ash-dark via-aged-gold to-ash-dark flex items-center justify-center">
                     <div className="text-center space-y-6">
                       <div className="flex items-center justify-center space-x-4">
-                        <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'40px',maxWidth:'80%',objectFit:'contain',display:'block',margin:'0 auto'}} />
+                        <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{height:'40px',maxWidth:'80%',objectFit:'contain',display:'block',margin:'0 auto'}} />
                         <div className="title-font text-3xl text-gold font-bold tracking-wider">
                           ASHENFALL
                         </div>

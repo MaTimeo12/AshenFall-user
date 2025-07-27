@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ashenFallLogo from '../components/AshenFall logo.png';
+import ashenFallLogo from '../components/ashen fall no bg.png';
 import { logoVariations } from '../data/mockData';
 
 const Logo = () => {

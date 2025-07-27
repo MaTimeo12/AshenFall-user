@@ -26,15 +26,28 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'glass backdrop-blur-lg' : ''
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md ${
+        scrolled ? 'glass backdrop-blur-lg' : ''
+      }`}
+      aria-label="Main Navigation"
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover-lift">
-            <div className="w-8 h-8 bg-gradient-gold rounded-lg flex items-center justify-center">
-              <img src={require('./AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'block',margin:'0 auto'}} />
+            <div className="w-8 h-8 bg-gradient-gold rounded-lg flex items-center justify-center shadow-lg">
+              <img
+                src={require('./ashen fall no bg.png')}
+                alt="AshenFall logo"
+                style={{
+                  height: '28px',
+                  maxWidth: '70%',
+                  objectFit: 'contain',
+                  display: 'block',
+                  margin: '0 auto'
+                }}
+              />
             </div>
             <span className="title-font text-xl text-gold font-semibold">AshenFall</span>
           </Link>
@@ -45,11 +58,12 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 interface-font ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 interface-font hover:shadow-lg ${
                   location.pathname === item.path
                     ? 'bg-aged-gold text-ash-dark'
                     : 'text-parchment-beige hover:bg-aged-gold hover:bg-opacity-20 hover:text-aged-gold'
                 }`}
+                aria-current={location.pathname === item.path ? 'page' : undefined}
               >
                 <span className="mr-2">{item.icon}</span>
                 {item.label}
@@ -61,36 +75,47 @@ const Navigation = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-lg text-parchment-beige hover:bg-aged-gold hover:bg-opacity-20 transition-colors duration-300"
+            aria-expanded={isOpen}
+            aria-label="Toggle navigation menu"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <span className={`bg-current block transition-all duration-300 h-0.5 w-6 transform ${
-                isOpen ? 'rotate-45 translate-y-1.5' : '-translate-y-0.5'
-              }`}></span>
-              <span className={`bg-current block transition-all duration-300 h-0.5 w-6 my-0.5 ${
-                isOpen ? 'opacity-0' : 'opacity-100'
-              }`}></span>
-              <span className={`bg-current block transition-all duration-300 h-0.5 w-6 transform ${
-                isOpen ? '-rotate-45 -translate-y-1.5' : 'translate-y-0.5'
-              }`}></span>
+              <span
+                className={`bg-current block transition-all duration-300 h-0.5 w-6 transform ${
+                  isOpen ? 'rotate-45 translate-y-1.5' : '-translate-y-0.5'
+                }`}
+              ></span>
+              <span
+                className={`bg-current block transition-all duration-300 h-0.5 w-6 my-0.5 ${
+                  isOpen ? 'opacity-0' : 'opacity-100'
+                }`}
+              ></span>
+              <span
+                className={`bg-current block transition-all duration-300 h-0.5 w-6 transform ${
+                  isOpen ? '-rotate-45 -translate-y-1.5' : 'translate-y-0.5'
+                }`}
+              ></span>
             </div>
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
+        <div
+          className={`md:hidden transition-all duration-300 overflow-hidden ${
+            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
           <div className="py-4 space-y-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 interface-font ${
+                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 interface-font hover:shadow-lg ${
                   location.pathname === item.path
                     ? 'bg-aged-gold text-ash-dark'
                     : 'text-parchment-beige hover:bg-aged-gold hover:bg-opacity-20 hover:text-aged-gold'
                 }`}
+                aria-current={location.pathname === item.path ? 'page' : undefined}
               >
                 <span className="mr-2">{item.icon}</span>
                 {item.label}
