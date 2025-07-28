@@ -107,10 +107,10 @@ Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’As
 
 | Rôle                     | Nom / Pseudo           |
 |--------------------------|------------------------|
-| 🎨 Direction artistique  | @tonpseudo             |
-| 🛠️ Développement web    | @unautrepseudo         |
+| 🎨 Direction artistique  | @MaTimeo12 @Eloane             |
+| 🛠️ Développement web    | @Eloane        |
 | 📱 Réseaux sociaux       | @project.ashenfall     |
-| 👁️ Supervision visuelle | Mattis T.              |
+| 👁️ Supervision visuelle | @MaTimeo12              |
 
 ---
 
