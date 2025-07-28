@@ -117,13 +117,12 @@ Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’As
 ## 🛡️ Licence
 
 ```text
-Creative Commons BY-NC-SA 4.0
-Vous pouvez partager et adapter les ressources, tant que :
-- vous citez le projet AshenFall,
-- vous ne l’utilisez pas à des fins commerciales,
-- vous conservez la même licence.
+📄 Licence
 
-> Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+Tous les éléments présents dans ce projet sont protégés.  
+🚫 **Aucune utilisation, reproduction ou modification n’est autorisée en dehors des coopérateurs officiels du projet AshenFall.**  
+Pour toute demande exceptionnelle, veuillez nous contacter via le serveur Discord.
+
 ```
 
 ---
