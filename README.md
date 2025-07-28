@@ -96,10 +96,11 @@ Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’As
 ## 🖼️ Aperçus
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="300" alt="GIF preview dark fantasy"/>
-  <br />
-  <i>Visuel d’ambiance dark fantasy - inspiré de l’univers du jeu</i>
+  <a href="https://www.youtube.com/watch?v=C59lNmbfDtA">
+    <img src="https://img.youtube.com/vi/C59lNmbfDtA/hqdefault.jpg" width="480" alt="Vidéo YouTube AshenFall"/>
+  </a>
 </p>
+
 
 ---
 
