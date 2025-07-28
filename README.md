@@ -85,7 +85,7 @@ Pour toute question, suggestion ou collaboration :
 
 
 - 📱 TikTok : [@project ashenfall](https://www.tiktok.com/@project.ashenfall?_t=ZN-8yPI5xcpsu6&_r=1)
-- 💬 Discord : Serveur communautaire en cours de préparation
+- 💬 Discord :[AshenFall](https://discord.gg/CTdmWQemqx)
 
 ---
 
