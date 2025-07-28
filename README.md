@@ -122,3 +122,19 @@ Vous pouvez partager et adapter les ressources, tant que :
 - vous citez le projet AshenFall,
 - vous ne l’utilisez pas à des fins commerciales,
 - vous conservez la même licence.
+
+## 📄 Lire la licence complète
+
+> Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+
+---
+
+## 📬 Contact
+
+- 🎵 TikTok : [@project.ashenfall](https://www.tiktok.com/@project.ashenfall)
+- 💬 Discord : [Rejoindre le serveur](https://discord.gg/CTdmWQemqx)
+- 🌐 Site web : [ashenfall.netlify.app](https://ashenfall.netlify.app)
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=6A4BB8&height=150&section=footer"/>
+</p>
