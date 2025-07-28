@@ -123,9 +123,7 @@ Vous pouvez partager et adapter les ressources, tant que :
 - vous ne l’utilisez pas à des fins commerciales,
 - vous conservez la même licence.
 
-## 📄 Lire la licence complète
-
-> Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+> Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.```
 
 ---
 
