@@ -1,113 +1,133 @@
+<div align="center">
 
+<img src="https://cdn.discordapp.com/attachments/1394875966924521562/1399402391920709794/image0.png?ex=6888de89&is=68878d09&hm=7e70debf9a69a322985cdf89cfee3e4afba49392d5a0b12239a37ef2a3873f74&" alt="AshenFall Logo" width="250"/>
 
-<p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1394875966924521562/1399402391920709794/image0.png?ex=6888de89&is=68878d09&hm=7e70debf9a69a322985cdf89cfee3e4afba49392d5a0b12239a37ef2a3873f74&" alt="AshenFall Logo" width="300"/>
-</p>
+</div>
 
-## 📚 Sommaire
+<h1 align="center">
+  🌑 AshenFall — Charte Graphique Officielle
+</h1>
 
-- [🌑 Présentation](#-ashenfall--charte-graphique-officielle)
-- [🧭 Contenu du site](#-contenu-du-site)
-- [📦 Utilisation](#-utilisation)
-- [📁 Structure technique](#-structure-technique)
-- [🤝 Contribuer](#-contribuer)
-- [📬 Contact](#-contact)
+<div align="center">
 
+<img src="https://readme-typing-svg.herokuapp.com?color=9A5CFF&size=22&center=true&vCenter=true&width=600&lines=Dark+Fantasy+MMORPG;Identité+visuelle+immersive;Templates+TikTok+officiels;Palette+et+logos+d'AshenFall" />
 
+<br>
 
-# 🌑 AshenFall — Charte Graphique Officielle
+<a href="https://www.tiktok.com/@ashenfall">
+  <img src="https://img.shields.io/badge/TikTok-@ashenfall-black?style=for-the-badge&logo=tiktok&logoColor=white" />
+</a>
+<a href="mailto:ashenfall.project@gmail.com">
+  <img src="https://img.shields.io/badge/mail-ashenfall.project@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://ashenfall.netlify.app">
+  <img src="https://img.shields.io/badge/Site-web-en-ligne-6A4BB8?style=for-the-badge&logo=netlify&logoColor=white" />
+</a>
 
-Bienvenue sur le dépôt de la **charte graphique officielle** d’AshenFall, le MMORPG dark fantasy en développement communautaire.  
-Ce site a pour objectif de centraliser toutes les ressources visuelles, directives de design et composants essentiels à la communication d’AshenFall sur les réseaux sociaux, en particulier **TikTok**, Discord et le site officiel.
-
-🔗 Accéder au site : [ashenfall.netlify.app](https://ashenfall.netlify.app/)
+</div>
 
 ---
 
-## 🧭 Contenu du site
+## 🧭 Sommaire
 
-Le site est divisé en plusieurs sections clés pour guider les membres de l’équipe artistique, les monteurs vidéo, les développeurs front-end et les community managers.
+- [🎨 Présentation](#-présentation)
+- [📚 Contenu du site](#-contenu-du-site)
+- [📦 Utilisation](#-utilisation)
+- [🧪 Roadmap](#-roadmap)
+- [🖼️ Aperçus](#-aperçus)
+- [👥 Équipe](#-équipe)
+- [🛡️ Licence](#-licence)
+- [📬 Contact](#-contact)
 
-### 🎨 1. Palette de Couleurs
-- Palette immersive inspirée des univers dark fantasy
-- Tons principaux : gris cendré, noir profond, rouge carmin et accents dorés
-- Utilisation : fond, interface, éléments typographiques et mise en avant
+---
 
-### ✍️ 2. Typographies
-- Titres : police stylisée à fort impact visuel
-- Textes courants : police lisible, élégante, avec un contraste adapté pour l’accessibilité
-- Styles CSS prédéfinis disponibles pour intégration rapide
+## 🎨 Présentation
 
-### 🔱 3. Logos & Symboles
+AshenFall est un MMORPG **dark fantasy semi-stylisé** développé avec l’ambition de créer un univers vivant, communautaire et profondément immersif.
+
+Ce site web regroupe tous les **éléments graphiques officiels** du projet : logos, couleurs, polices, templates TikTok, textures, animations, et lignes directrices pour respecter l’identité visuelle du jeu.
+
+---
+
+## 📚 Contenu du site
+
+### 🎨 Palette de Couleurs
+Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’AshenFall.
+
+### ✍️ Typographies
+- Titre : Police stylisée & immersive
+- Texte courant : Police lisible, élégante
+
+### 🔱 Logos & Symboles
 - Logo principal vectoriel
-- Versions monochromes & inversées
-- Symboles secondaires utilisables pour les icônes de profil, watermark, etc.
+- Versions inversées & monochromes
+- Fichiers `.svg`, `.png` & `.webp`
 
-### 🧩 4. Templates TikTok
-- Fichiers Canva & exports personnalisables
-- Ratio 9:16 optimisé pour TikTok
-- Design modulaire, effets dynamiques, transitions cohérentes avec l’univers du jeu
+### 🧩 Templates TikTok
+- Templates 9:16 pour TikTok, avec effets et styles cohérents
+- Export modifiable via Canva
 
-### 🖼️ 5. Textures & Ambiances
-- Textures officielles (fond, grain, fumée, runes…)
-- Pack téléchargeable pour créateurs de contenu
-- Couleurs modifiées pour cohérence graphique avec le jeu
+### 🖼️ Textures & Ambiances
+- Packs de textures en haute résolution
+- Utilisables pour les thumbnails, vidéos et banners
 
 ---
 
 ## 📦 Utilisation
 
-### Pour les designers :
-- Respecter les proportions et règles d’espacement des logos
-- Utiliser exclusivement les couleurs et polices référencées
-- Télécharger les éléments depuis le site pour garantir leur qualité
-
-### Pour les community managers :
-- Utiliser les templates TikTok pour assurer une cohérence de marque
-- Appliquer les animations et effets recommandés
-- S’appuyer sur les styles définis pour éviter les incohérences visuelles
-
-### Pour les développeurs :
-- Le site est responsive (mobile-first)
-- Utilise TailwindCSS pour la structure
-- Structure prête à l’intégration dans les futures pages du site officiel du jeu
+- 🔒 Utilisation réservée à l’équipe AshenFall
+- 🎥 Community Managers : utilisez les templates TikTok et respectez les palettes
+- 🎨 Designers : appliquez les règles de proportion, d’espacement et de contraste
+- 🧑‍💻 Développeurs : TailwindCSS intégré, structure prête à évoluer vers un design token system
 
 ---
 
-## 📁 Structure technique
+## 🧪 Roadmap
 
-- **Framework** : HTML/CSS + TailwindCSS
-- **Hébergement** : Netlify
-- **Type de projet** : statique, prêt à être connecté à un CMS ou un système de design token si besoin
-
----
-
-## 🤝 Contribuer
-
-Ce projet est ouvert à la contribution pour les membres de l’équipe d’AshenFall.
-
-### Pour proposer une modification :
-1. Forker le projet
-2. Créer une branche `feature/nom-de-votre-feature`
-3. Soumettre une **Pull Request** avec une description claire
-
-> ⚠️ Toute proposition graphique doit respecter l’univers visuel du jeu (dark fantasy, semi-stylisé).
+- ✅ Lancement du site (V1)
+- ✅ Ajout des logos et palettes
+- ✅ Templates TikTok (base)
+- 🟨 Ajout d’un générateur de visuels automatisé
+- 🟨 Export direct vers Canva / Figma
+- ⏳ Intégration interactive pour le branding in-game
 
 ---
 
-## 📬 Contact
+## 🖼️ Aperçus
 
-Pour toute question, suggestion ou collaboration :
+<p align="center">
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="300" alt="GIF preview dark fantasy"/>
+  <br />
+  <i>Visuel d’ambiance dark fantasy - inspiré de l’univers du jeu</i>
+</p>
 
+---
 
-- 📱 TikTok : [@project ashenfall](https://www.tiktok.com/@project.ashenfall?_t=ZN-8yPI5xcpsu6&_r=1)
-- 💬 Discord :[AshenFall](https://discord.gg/CTdmWQemqx)
+## 👥 Équipe
+
+| Rôle                     | Nom / Pseudo           |
+|--------------------------|------------------------|
+| 🎨 Direction artistique  | @tonpseudo             |
+| 🛠️ Développement web    | @unautrepseudo         |
+| 📱 Réseaux sociaux       | @ashenfall             |
+| 👁️ Supervision visuelle | Mattis T.              |
 
 ---
 
-## © AshenFall
+## 🛡️ Licence
 
-Tous les visuels, logos et ressources sont la propriété du projet AshenFall.  
-Merci de respecter la licence et de ne pas utiliser les éléments de cette charte hors du cadre du projet.
+```text
+Creative Commons BY-NC-SA 4.0
+Vous pouvez partager et adapter les ressources, tant que :
+- vous citez le projet AshenFall,
+- vous ne l’utilisez pas à des fins commerciales,
+- vous conservez la même licence.
 
----
+📬 Contact
+TikTok : @ashenfall
+
+Email : ashenfall.project@gmail.com
+
+Site : ashenfall.netlify.app
+
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=6A4BB8&height=150&section=footer"/> </p> ```
