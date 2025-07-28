@@ -96,8 +96,8 @@ Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’As
 ## 🖼️ Aperçus
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=C59lNmbfDtA">
-    <img src="https://img.youtube.com/vi/C59lNmbfDtA/hqdefault.jpg" width="480" alt="Vidéo YouTube AshenFall"/>
+  <a href="https://cdn.discordapp.com/attachments/1391234300371927052/1399432876637945937/248926717_1048517729234435_7145215861767909863_n.jpg?ex=6888faed&is=6887a96d&hm=b8bb70ba6f15dad210ff5db62db908be6abbf0639a62f130c3c0ee191d772bef&">
+    <img src="https://cdn.discordapp.com/attachments/1391234300371927052/1399432876637945937/248926717_1048517729234435_7145215861767909863_n.jpg?ex=6888faed&is=6887a96d&hm=b8bb70ba6f15dad210ff5db62db908be6abbf0639a62f130c3c0ee191d772bef&" width="480" alt="Vidéo YouTube AshenFall"/>
   </a>
 </p>
 
