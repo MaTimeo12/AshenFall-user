@@ -15,16 +15,16 @@ const Logo = () => {
       <div className="text-center mb-6">
         {/* Logo Preview */}
         <div className={`mx-auto mb-4 flex items-center justify-center transition-all duration-300 ${
-          variation.format === 'Carré' ? 'w-32 h-32' : 'w-48 h-24'
-        } bg-gradient-to-br from-ash-dark to-armor-grey rounded-lg border-2 border-aged-gold border-opacity-30`}>
+          variation.format === 'Carré' ? 'w-32 h-32 rounded-full' : 'w-48 h-24'
+        } bg-gradient-to-br from-ash-dark to-armor-grey border-2 border-aged-gold border-opacity-30`}>
           {variation.format === 'Carré' ? (
             <div className="text-center">
-              <img src={ashenFallLogo} alt="AshenFall logo" className="h-8 mx-auto mb-1" />
+              <img src={require('../components/Ashenfall logo compact.png')} alt="AshenFall logo" className="h-auto w-50 mx-auto mb-1" />
               {/* <div className="title-font text-xs text-gold font-semibold">AF</div> */}
             </div>
           ) : (
             <div className="flex items-center justify-center w-full">
-              <img src={ashenFallLogo} alt="AshenFall logo" className="h-8 mx-auto" />
+              <img src={ashenFallLogo} alt="AshenFall logo" className="h-32 w-auto mx-auto" />
               {/* <div className="title-font text-lg text-gold font-semibold tracking-wider">
                 ASHENFALL
               </div> */}
@@ -90,18 +90,22 @@ const Logo = () => {
 
       {/* Main Logo Showcase */}
       <section className="container mx-auto px-4 mb-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="glass p-12 rounded-xl text-center mb-12 fade-in">
-            <div className="mb-8">
-              <div className="inline-flex items-center justify-center w-48 h-48 bg-gradient-to-br from-ash-dark via-armor-grey to-ash-dark rounded-full border-4 border-aged-gold shadow-2xl mb-6">
-                <div className="text-center">
-                  <img src={ashenFallLogo} alt="AshenFall logo" className="h-16 mb-2 filter drop-shadow-lg mx-auto" />
-                  {/* <div className="title-font text-2xl text-gold font-bold tracking-widest">
-                    ASHENFALL
-                  </div> */}
-                </div>
-              </div>
-            </div>
+  <div className="max-w-4xl mx-auto">
+    <div className="glass p-12 rounded-xl text-center mb-12 fade-in">
+      <div className="mb-8">
+        {/* Rectangle large avec coins arrondis modérés et bordure épaisse */}
+        <div className="inline-flex items-center justify-center w-96 h-64 bg-gradient-to-br from-ash-dark via-armor-grey to-ash-dark rounded-xl border-2 border-aged-gold shadow-2xl mb-6">
+          <div className="text-center">
+            {/* Image agrandie avec hauteur max et largeur auto */}
+            <img
+              src={ashenFallLogo}
+               alt="AshenFall logo"
+               className="h-[240px] w-auto mb-2 filter drop-shadow-lg mx-auto translate-x-2 -translate-y-1"
+            />
+
+          </div>
+        </div>
+      </div>
             
             <h2 className="title-font text-3xl font-semibold text-gold mb-4">
               Logo Principal
@@ -163,7 +167,7 @@ const Logo = () => {
                     </div>
                     
                     <div className="relative text-center">
-                      <img src={ashenFallLogo} alt="AshenFall logo" className="h-10 mb-2 mx-auto" />
+                      <img src={ashenFallLogo} alt="AshenFall logo" className="h-30 mb-2 mx-auto" />
                       {/* <div className="title-font text-xl text-gold font-bold tracking-wider">
                         ASHENFALL
                       </div> */}
