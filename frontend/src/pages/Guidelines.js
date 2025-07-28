@@ -5,10 +5,9 @@ const Guidelines = () => {
   const [activeSection, setActiveSection] = useState('colors');
 
   const GuidelineSection = ({ title, rules, icon, sectionKey }) => (
-    <div 
-      className={`glass p-6 rounded-xl cursor-pointer transition-all duration-300 ${
-        activeSection === sectionKey ? 'ring-2 ring-aged-gold bg-aged-gold bg-opacity-5' : 'hover-lift'
-      }`}
+    <div
+      className={`glass p-6 rounded-xl cursor-pointer transition-all duration-300 ${activeSection === sectionKey ? 'ring-2 ring-aged-gold bg-aged-gold bg-opacity-5' : 'hover-lift'
+        }`}
       onClick={() => setActiveSection(sectionKey)}
     >
       <div className="flex items-center mb-4">
@@ -17,10 +16,9 @@ const Guidelines = () => {
           {title}
         </h3>
       </div>
-      
-      <div className={`transition-all duration-300 overflow-hidden ${
-        activeSection === sectionKey ? 'max-h-96 opacity-100' : 'max-h-20 opacity-70'
-      }`}>
+
+      <div className={`transition-all duration-300 overflow-hidden ${activeSection === sectionKey ? 'max-h-96 opacity-100' : ' opacity-70'
+        }`}>
         <ul className="space-y-3">
           {rules.slice(0, activeSection === sectionKey ? rules.length : 2).map((rule, index) => (
             <li key={index} className="flex items-start">
@@ -31,7 +29,7 @@ const Guidelines = () => {
             </li>
           ))}
         </ul>
-        
+
         {activeSection !== sectionKey && rules.length > 2 && (
           <div className="mt-3">
             <span className="interface-font text-xs text-spectral">
@@ -44,18 +42,16 @@ const Guidelines = () => {
   );
 
   const ChecklistItem = ({ item, checked, onToggle }) => (
-    <div 
+    <div
       className="flex items-center p-3 glass rounded-lg cursor-pointer hover:bg-aged-gold hover:bg-opacity-10 transition-all duration-300"
       onClick={onToggle}
     >
-      <div className={`w-5 h-5 rounded border-2 mr-3 flex items-center justify-center transition-all duration-300 ${
-        checked ? 'bg-aged-gold border-aged-gold' : 'border-armor'
-      }`}>
+      <div className={`w-5 h-5 rounded border-2 mr-3 flex items-center justify-center transition-all duration-300 ${checked ? 'bg-aged-gold border-aged-gold' : 'border-armor'
+        }`}>
         {checked && <span className="text-ash-dark text-sm">✓</span>}
       </div>
-      <span className={`interface-font transition-colors duration-300 ${
-        checked ? 'text-parchment line-through opacity-60' : 'text-parchment'
-      }`}>
+      <span className={`interface-font transition-colors duration-300 ${checked ? 'text-parchment line-through opacity-60' : 'text-parchment'
+        }`}>
         {item}
       </span>
     </div>
@@ -91,7 +87,7 @@ const Guidelines = () => {
           </h1>
           <div className="w-32 h-1 bg-gradient-ember mx-auto mb-8"></div>
           <p className="body-font text-xl text-parchment max-w-3xl mx-auto leading-relaxed">
-            Règles essentielles et bonnes pratiques pour maintenir la cohérence 
+            Règles essentielles et bonnes pratiques pour maintenir la cohérence
             et l'impact de l'identité visuelle d'AshenFall à travers tous les supports.
           </p>
         </div>
@@ -100,25 +96,25 @@ const Guidelines = () => {
       {/* Quick Reference Cards */}
       <section className="container mx-auto px-4 mb-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <GuidelineSection 
+          <GuidelineSection
             title="Couleurs"
             rules={usageGuidelines.colorRestrictions}
             icon="🎨"
             sectionKey="colors"
           />
-          <GuidelineSection 
+          <GuidelineSection
             title="Logo"
             rules={usageGuidelines.logoRules}
             icon="🛡️"
             sectionKey="logo"
           />
-          <GuidelineSection 
+          <GuidelineSection
             title="Typographie"
             rules={usageGuidelines.typographyBestPractices}
             icon="✍️"
             sectionKey="typography"
           />
-          <GuidelineSection 
+          <GuidelineSection
             title="Adaptation"
             rules={usageGuidelines.adaptationRules}
             icon="🔄"
@@ -134,7 +130,7 @@ const Guidelines = () => {
             <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
               Règles Détaillées
             </h2>
-            
+
             <div className="glass p-8 rounded-xl mb-12">
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Do's Column */}
@@ -143,7 +139,7 @@ const Guidelines = () => {
                     <span className="text-3xl mr-3">✅</span>
                     À Faire
                   </h3>
-                  
+
                   <div className="space-y-6">
                     <div>
                       <h4 className="title-font text-lg font-semibold text-aged-gold mb-3">
@@ -156,7 +152,7 @@ const Guidelines = () => {
                         <li>• Maintenir un contraste minimum de 4.5:1</li>
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="title-font text-lg font-semibold text-aged-gold mb-3">
                         Logo & Typographie
@@ -177,7 +173,7 @@ const Guidelines = () => {
                     <span className="text-3xl mr-3">❌</span>
                     À Éviter
                   </h3>
-                  
+
                   <div className="space-y-6">
                     <div>
                       <h4 className="title-font text-lg font-semibold text-ember mb-3">
@@ -190,7 +186,7 @@ const Guidelines = () => {
                         <li>• Mélanger trop de familles de polices</li>
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="title-font text-lg font-semibold text-ember mb-3">
                         Pièges à Éviter
@@ -216,16 +212,16 @@ const Guidelines = () => {
           <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
             Checklist de Validation
           </h2>
-          
+
           <div className="glass p-8 rounded-xl">
             <p className="body-font text-lg text-parchment mb-8 text-center">
-              Utilisez cette checklist pour valider que votre création respecte 
+              Utilisez cette checklist pour valider que votre création respecte
               les guidelines d'AshenFall avant publication.
             </p>
-            
+
             <div className="space-y-3">
               {checklistItems.map((item, index) => (
-                <ChecklistItem 
+                <ChecklistItem
                   key={index}
                   item={item}
                   checked={checkedItems[index] || false}
@@ -233,7 +229,7 @@ const Guidelines = () => {
                 />
               ))}
             </div>
-            
+
             <div className="mt-8 text-center">
               <div className="inline-flex items-center space-x-4 px-6 py-3 bg-aged-gold bg-opacity-10 rounded-lg">
                 <span className="interface-font text-sm text-parchment">
@@ -241,13 +237,12 @@ const Guidelines = () => {
                 </span>
                 <div className="flex space-x-1">
                   {Array.from({ length: 10 }, (_, i) => (
-                    <div 
+                    <div
                       key={i}
-                      className={`w-2 h-2 rounded-full ${
-                        i < Math.floor((Object.values(checkedItems).filter(Boolean).length / checklistItems.length) * 10)
-                          ? 'bg-aged-gold' 
-                          : 'bg-armor'
-                      }`}
+                      className={`w-2 h-2 rounded-full ${i < Math.floor((Object.values(checkedItems).filter(Boolean).length / checklistItems.length) * 10)
+                        ? 'bg-aged-gold'
+                        : 'bg-armor'
+                        }`}
                     ></div>
                   ))}
                 </div>
@@ -267,7 +262,7 @@ const Guidelines = () => {
             <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
               Exemples de Cohérence
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               {/* Correct Example */}
               <div className="glass p-6 rounded-xl">
@@ -275,11 +270,11 @@ const Guidelines = () => {
                   <span className="text-2xl mr-2">✅</span>
                   Application Correcte
                 </h3>
-                
+
                 <div className="space-y-4">
                   <div className="p-4 bg-ash-dark rounded-lg border border-aged-gold border-opacity-30">
                     <div className="flex items-center space-x-3 mb-3">
-                      <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'inline-block',verticalAlign:'middle'}} />
+                      <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{ height: '28px', maxWidth: '70%', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle' }} />
                       <span className="title-font text-lg text-gold font-semibold">ASHENFALL</span>
                     </div>
                     <h4 className="title-font text-lg text-spectral font-semibold mb-2">
@@ -292,7 +287,7 @@ const Guidelines = () => {
                       Commencer l'Aventure
                     </button>
                   </div>
-                  
+
                   <div className="text-xs interface-font text-parchment space-y-1">
                     <div>✓ Palette de couleurs respectée</div>
                     <div>✓ Typographies appropriées</div>
@@ -308,26 +303,26 @@ const Guidelines = () => {
                   <span className="text-2xl mr-2">❌</span>
                   Application Incorrecte
                 </h3>
-                
+
                 <div className="space-y-4">
                   <div className="p-4 bg-red-900 bg-opacity-20 rounded-lg border border-ember border-opacity-50">
                     <div className="flex items-center space-x-3 mb-3">
-                      <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{height:'28px',maxWidth:'70%',objectFit:'contain',display:'inline-block',verticalAlign:'middle',transform:'scaleX(1.5)'}} />
-                      <span className="text-lg text-red-400 font-bold" style={{fontFamily: 'Arial'}}>
+                      <img src={require('../components/AshenFall logo.png')} alt="AshenFall logo" style={{ height: '28px', maxWidth: '70%', objectFit: 'contain', display: 'inline-block', verticalAlign: 'middle', transform: 'scaleX(1.5)' }} />
+                      <span className="text-lg text-red-400 font-bold" style={{ fontFamily: 'Arial' }}>
                         ASHENFALL
                       </span>
                     </div>
-                    <h4 className="text-lg text-blue-400 font-bold mb-2" style={{fontFamily: 'Times'}}>
+                    <h4 className="text-lg text-blue-400 font-bold mb-2" style={{ fontFamily: 'Times' }}>
                       Nouvelle Quête Disponible
                     </h4>
-                    <p className="text-sm text-green-300 leading-relaxed mb-3" style={{fontFamily: 'Courier'}}>
+                    <p className="text-sm text-green-300 leading-relaxed mb-3" style={{ fontFamily: 'Courier' }}>
                       Explorez les ruines oubliées et découvrez les secrets des anciens maîtres.
                     </p>
                     <button className="bg-purple-600 text-white px-4 py-2 rounded">
                       Commencer l'Aventure
                     </button>
                   </div>
-                  
+
                   <div className="text-xs interface-font text-ember space-y-1">
                     <div>❌ Couleurs non autorisées</div>
                     <div>❌ Polices inappropriées</div>
@@ -347,13 +342,13 @@ const Guidelines = () => {
           <h2 className="title-font text-4xl font-semibold text-gold mb-8">
             Besoin d'Aide ?
           </h2>
-          
+
           <div className="glass p-8 rounded-xl">
             <p className="body-font text-lg text-parchment mb-8">
-              Pour toute question concernant l'application de ces guidelines 
+              Pour toute question concernant l'application de ces guidelines
               ou pour obtenir des ressources supplémentaires, contactez l'équipe créative.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl mb-3">📧</div>
@@ -364,7 +359,7 @@ const Guidelines = () => {
                   brand@ashenfall.com
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="text-3xl mb-3">🎨</div>
                 <h3 className="title-font text-lg font-semibold text-spectral mb-2">
@@ -374,7 +369,7 @@ const Guidelines = () => {
                   creative@ashenfall.com
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="text-3xl mb-3">📚</div>
                 <h3 className="title-font text-lg font-semibold text-spectral mb-2">

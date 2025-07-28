@@ -12,25 +12,25 @@ const ColorPalette = () => {
   };
 
   const ColorCard = ({ color, index }) => (
-    <div 
+    <div
       className="glass p-6 rounded-xl hover-lift cursor-pointer transition-all duration-500 slide-up"
       style={{ animationDelay: `${index * 100}ms` }}
       onClick={() => setSelectedColor(selectedColor === color.name ? null : color.name)}
     >
       {/* Color Sample */}
-      <div 
+      <div
         className="w-full h-32 rounded-lg mb-4 border-2 border-parchment border-opacity-20 shadow-lg"
         style={{ backgroundColor: color.hex }}
       ></div>
-      
+
       {/* Color Info */}
       <div className="space-y-3">
         <h3 className="title-font text-xl font-semibold text-gold">
           {color.name}
         </h3>
-        
+
         <div className="space-y-2">
-          <div 
+          <div
             className="flex items-center justify-between p-2 bg-ash-dark bg-opacity-50 rounded cursor-pointer hover:bg-opacity-70 transition-colors"
             onClick={(e) => {
               e.stopPropagation();
@@ -45,8 +45,8 @@ const ColorPalette = () => {
               <span className="text-xs text-spectral-blue ml-2">Copié!</span>
             )}
           </div>
-          
-          <div 
+
+          <div
             className="flex items-center justify-between p-2 bg-ash-dark bg-opacity-50 rounded cursor-pointer hover:bg-opacity-70 transition-colors"
             onClick={(e) => {
               e.stopPropagation();
@@ -64,9 +64,8 @@ const ColorPalette = () => {
         </div>
 
         {/* Expanded Info */}
-        <div className={`transition-all duration-300 overflow-hidden ${
-          selectedColor === color.name ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
+        <div className={`transition-all duration-300 overflow-hidden ${selectedColor === color.name ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}>
           <div className="pt-4 border-t border-aged-gold border-opacity-30">
             <div className="mb-3">
               <h4 className="interface-font text-sm font-semibold text-spectral mb-1">Usage Recommandé</h4>
@@ -95,8 +94,8 @@ const ColorPalette = () => {
             Palette de Couleurs
           </h1>
           <div className="w-32 h-1 bg-gradient-ember mx-auto mb-8"></div>
-          <p className="body-font text-xl text-parchment max-w-3xl mx-auto leading-relaxed">
-            Découvrez les 6 couleurs principales d'AshenFall, chacune soigneusement 
+          <p className="body-font text-xl text-parchment max-w-3xl mx-auto leading-relaxed mb-5">
+            Découvrez les 6 couleurs principales d'AshenFall, chacune soigneusement
             choisie pour évoquer l'atmosphère dark fantasy du jeu.
           </p>
         </div>
@@ -187,7 +186,7 @@ const ColorPalette = () => {
           <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
             Règles d'Usage
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass p-6 rounded-xl">
               <h3 className="title-font text-xl font-semibold text-ember mb-4">
@@ -201,7 +200,7 @@ const ColorPalette = () => {
                 <li>• Utiliser Or Vieilli pour hiérarchiser l'information</li>
               </ul>
             </div>
-            
+
             <div className="glass p-6 rounded-xl">
               <h3 className="title-font text-xl font-semibold text-ember mb-4">
                 ❌ À Éviter

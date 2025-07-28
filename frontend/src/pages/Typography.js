@@ -4,8 +4,30 @@ import { typographyStyles } from '../data/mockData';
 const Typography = () => {
   const [selectedFont, setSelectedFont] = useState(null);
 
+  const importText = "@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');";
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(importText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
+  const importText2 = `.title-font &#123; font-family: 'Cinzel', serif; &#125;
+                  .body-font &#123; font-family: 'Lora', serif; &#125;
+                  .interface-font &#123; font-family: 'Poppins', sans-serif; &#125;`;
+
+  const [copied2, setCopied2] = useState(false);
+
+  const handleCopy2 = () => {
+    navigator.clipboard.writeText(importText2);
+    setCopied2(true);
+    setTimeout(() => setCopied2(false), 1500);
+  };
+
+
   const FontShowcase = ({ font, index }) => (
-    <div 
+    <div
       className="glass p-8 rounded-xl hover-lift transition-all duration-500 slide-up"
       style={{ animationDelay: `${index * 200}ms` }}
     >
@@ -19,7 +41,7 @@ const Typography = () => {
           </span>
           <div className="flex space-x-2">
             {font.weights.map((weight) => (
-              <span 
+              <span
                 key={weight}
                 className="interface-font text-xs px-2 py-1 bg-aged-gold bg-opacity-20 text-aged-gold rounded"
               >
@@ -39,17 +61,17 @@ const Typography = () => {
       {/* Font Examples */}
       <div className="space-y-6">
         {font.examples.map((example, exampleIndex) => (
-          <div 
+          <div
             key={exampleIndex}
             className="p-4 bg-ash-dark bg-opacity-30 rounded-lg border border-aged-gold border-opacity-20"
           >
-            <div 
-              className={`${font.fontFamily === 'Cinzel' ? 'title-font' : 
-                         font.fontFamily === 'Lora' ? 'body-font' : 'interface-font'} 
+            <div
+              className={`${font.fontFamily === 'Cinzel' ? 'title-font' :
+                font.fontFamily === 'Lora' ? 'body-font' : 'interface-font'} 
                          text-parchment leading-relaxed`}
-              style={{ 
-                fontSize: example.size, 
-                fontWeight: example.weight 
+              style={{
+                fontSize: example.size,
+                fontWeight: example.weight
               }}
             >
               {example.text}
@@ -58,7 +80,7 @@ const Typography = () => {
               <span className="interface-font text-xs text-armor">
                 {example.size} • Weight {example.weight}
               </span>
-              <button 
+              <button
                 className="interface-font text-xs text-spectral hover:text-aged-gold transition-colors"
                 onClick={() => {
                   navigator.clipboard.writeText(`font-family: '${font.fontFamily}', ${font.fontFamily === 'Poppins' ? 'sans-serif' : 'serif'}; font-size: ${example.size}; font-weight: ${example.weight};`);
@@ -82,8 +104,8 @@ const Typography = () => {
             Typographies
           </h1>
           <div className="w-32 h-1 bg-gradient-ember mx-auto mb-8"></div>
-          <p className="body-font text-xl text-parchment max-w-3xl mx-auto leading-relaxed">
-            Trois familles de polices soigneusement sélectionnées pour créer 
+          <p className="body-font text-xl text-parchment max-w-3xl mx-auto leading-relaxed mb-5">
+            Trois familles de polices soigneusement sélectionnées pour créer
             une hiérarchie visuelle claire et une expérience de lecture optimale.
           </p>
         </div>
@@ -105,7 +127,7 @@ const Typography = () => {
             <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
               Hiérarchie Typographique
             </h2>
-            
+
             <div className="glass p-8 rounded-xl">
               <div className="space-y-8">
                 {/* Title Hierarchy */}
@@ -124,14 +146,14 @@ const Typography = () => {
                 {/* Body Text */}
                 <div>
                   <p className="body-font text-lg text-parchment mb-4 leading-relaxed">
-                    <strong className="text-gold">Texte d'introduction (Lora Medium):</strong> Dans les terres 
-                    désolées d'AshenFall, où les cendres du passé murmurent des secrets oubliés, 
-                    les héros émergent pour forger leur destinée. Cette typographie évoque 
+                    <strong className="text-gold">Texte d'introduction (Lora Medium):</strong> Dans les terres
+                    désolées d'AshenFall, où les cendres du passé murmurent des secrets oubliés,
+                    les héros émergent pour forger leur destinée. Cette typographie évoque
                     l'élégance des manuscrits anciens.
                   </p>
                   <p className="body-font text-base text-parchment mb-4 leading-relaxed">
-                    Texte courant (Lora Regular): Les aventuriers parcourent des donjons 
-                    millénaires, affrontant des créatures mystiques et découvrant des 
+                    Texte courant (Lora Regular): Les aventuriers parcourent des donjons
+                    millénaires, affrontant des créatures mystiques et découvrant des
                     artefacts aux pouvoirs immenses. Chaque ligne raconte une histoire.
                   </p>
                 </div>
@@ -146,7 +168,7 @@ const Typography = () => {
                       Bouton Secondaire (Poppins Medium)
                     </button>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <p className="interface-font text-sm text-armor">
                       Texte d'aide (Poppins Regular) • Labels de formulaire
@@ -168,17 +190,19 @@ const Typography = () => {
           <h2 className="title-font text-4xl font-semibold text-gold mb-8 text-center">
             Implémentation Technique
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {/* Google Fonts Import */}
             <div className="glass p-6 rounded-xl">
               <h3 className="title-font text-xl font-semibold text-spectral mb-4">
                 Import Google Fonts
               </h3>
-              <div className="bg-ash-dark p-4 rounded-lg border border-aged-gold border-opacity-20">
-                <code className="interface-font text-xs text-parchment leading-relaxed block">
-                  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-                </code>
+              <div
+                onClick={handleCopy}
+                className="bg-ash-dark p-4 rounded-lg border border-aged-gold border-opacity-20 cursor-pointer text-parchment text-xs interface-font"
+              >
+                Cliquez pour copier
+                {copied && <div className="text-green-400 mt-2">Copié !</div>}
               </div>
             </div>
 
@@ -187,13 +211,15 @@ const Typography = () => {
               <h3 className="title-font text-xl font-semibold text-spectral mb-4">
                 Classes CSS Utilitaires
               </h3>
-              <div className="bg-ash-dark p-4 rounded-lg border border-aged-gold border-opacity-20">
-                <code className="interface-font text-xs text-parchment leading-relaxed block">
-                  .title-font &#123; font-family: 'Cinzel', serif; &#125;<br/>
-                  .body-font &#123; font-family: 'Lora', serif; &#125;<br/>
-                  .interface-font &#123; font-family: 'Poppins', sans-serif; &#125;
-                </code>
+              <div
+                onClick={handleCopy2}
+                className="bg-ash-dark p-4 rounded-lg border border-aged-gold border-opacity-20 cursor-pointer text-parchment text-xs interface-font"
+              >
+                Cliquez pour copier
+                {copied2 && <div className="text-green-400 mt-2">Copié !</div>}
               </div>
+
+      
             </div>
           </div>
 
@@ -202,7 +228,7 @@ const Typography = () => {
             <h3 className="title-font text-2xl font-semibold text-gold mb-6">
               Règles Typographiques
             </h3>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="title-font text-lg font-semibold text-ember mb-3">
@@ -216,7 +242,7 @@ const Typography = () => {
                   <li>• Respecter les graisses recommandées</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="title-font text-lg font-semibold text-ember mb-3">
                   À Éviter

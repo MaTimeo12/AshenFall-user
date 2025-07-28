@@ -27,7 +27,7 @@ function App() {
           <Route path="/guidelines" element={<Guidelines />} />
         </Routes>
       </BrowserRouter>
-      <h1>Bienvenue sur AshenFall</h1>
+      <h1 className="ml-[5px]">Bienvenue sur AshenFall</h1>
     </div>
   );
 }

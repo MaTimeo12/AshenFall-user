@@ -59,13 +59,16 @@ const HomePage = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 gradient-ash"></div>
         <div className="absolute inset-0 texture-overlay"></div>
-        
+
         <div className="relative container mx-auto px-4 py-32">
           <div className={`text-center transition-all duration-1000 ${isVisible ? 'fade-in' : 'opacity-0'}`}>
             {/* Logo Symbol */}
             <div className="mb-8 float">
-              <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-gold rounded-full shadow-2xl">
-                <img src={require('../components/ashen fall no bg.png')} alt="AshenFall logo" style={{height:'40px',maxWidth:'80%',objectFit:'contain',display:'block',margin:'0 auto'}} />
+              <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-gold rounded-full shadow-2xl mt-5">
+                <img
+                  src={require('../components/ashen fall no bg.png')} alt="AshenFall logo"
+                  style={{ height: '100px', objectFit: 'contain', display: 'block', margin: '0 auto' }}
+                />
               </div>
             </div>
 
@@ -73,20 +76,20 @@ const HomePage = () => {
             <h1 className="title-font text-6xl md:text-8xl font-bold text-gold mb-6 tracking-wider">
               ASHENFALL
             </h1>
-            
+
             <div className="w-32 h-1 bg-gradient-ember mx-auto mb-8"></div>
-            
+
             <p className="body-font text-xl md:text-2xl text-parchment mb-4 max-w-3xl mx-auto leading-relaxed">
               Charte Graphique Complète
             </p>
-            
+
             <p className="interface-font text-lg text-armor opacity-90 mb-12 max-w-2xl mx-auto">
-              Découvrez l'univers visuel d'AshenFall : couleurs, typographies, logos et guidelines 
+              Découvrez l'univers visuel d'AshenFall : couleurs, typographies, logos et guidelines
               pour un MMORPG médiéval fantasy au style dark fantasy immersif.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-[20px] ">
               <Link to="/colors" className="btn-primary text-lg px-8 py-4 hover-lift">
                 Explorer la Charte
               </Link>
@@ -122,7 +125,7 @@ const HomePage = () => {
               Éléments de la Charte
             </h2>
             <p className="body-font text-lg text-parchment max-w-2xl mx-auto">
-              Explorez chaque composant de l'identité visuelle d'AshenFall, 
+              Explorez chaque composant de l'identité visuelle d'AshenFall,
               conçue pour créer une expérience immersive et cohérente.
             </p>
           </div>
@@ -132,9 +135,8 @@ const HomePage = () => {
               <Link
                 key={index}
                 to={feature.path}
-                className={`glass p-8 rounded-xl hover-lift group transition-all duration-500 ${
-                  isVisible ? 'slide-up' : 'opacity-0'
-                }`}
+                className={`glass p-8 rounded-xl hover-lift group transition-all duration-500 ${isVisible ? 'slide-up' : 'opacity-0'
+                  }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="text-center">
@@ -165,12 +167,12 @@ const HomePage = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left">
                 <p className="body-font text-lg text-parchment mb-6 leading-relaxed">
-                  <strong className="text-gold">AshenFall</strong> plonge les joueurs dans un univers 
-                  médiéval fantasy sombre, où les cendres du passé nourrissent l'espoir d'un avenir 
+                  <strong className="text-gold">AshenFall</strong> plonge les joueurs dans un univers
+                  médiéval fantasy sombre, où les cendres du passé nourrissent l'espoir d'un avenir
                   meilleur. Cette charte graphique capture l'essence de ce monde épique.
                 </p>
                 <p className="body-font text-lg text-parchment leading-relaxed">
-                  Chaque élément visuel a été pensé pour évoquer la grandeur déchue, 
+                  Chaque élément visuel a été pensé pour évoquer la grandeur déchue,
                   la magie mystérieuse et l'héroïsme naissant qui caractérisent l'expérience de jeu.
                 </p>
               </div>
@@ -197,7 +199,7 @@ const HomePage = () => {
                 <Link
                   key={index}
                   to={feature.path}
-                  className="interface-font px-6 py-3 bg-ash-dark text-parchment rounded-lg hover:bg-aged-gold hover:text-ash-dark transition-all duration-300 hover-lift"
+                  className="interface-font px-6 py-1 bg-ash-dark text-parchment rounded-lg hover:bg-aged-gold hover:text-ash-dark transition-all duration-300 hover-lift"
                 >
                   {feature.icon} {feature.title}
                 </Link>
