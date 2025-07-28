@@ -83,8 +83,8 @@ Ce projet est ouvert à la contribution pour les membres de l’équipe d’Ashe
 
 Pour toute question, suggestion ou collaboration :
 
-- 📧 Mail : [ashenfall.project@gmail.com](mailto:ashenfall.project@gmail.com)
-- 📱 TikTok : [@ashenfall](https://www.tiktok.com/@ashenfall)
+
+- 📱 TikTok : [@project ashenfall](https://www.tiktok.com/@project.ashenfall?_t=ZN-8yPI5xcpsu6&_r=1)
 - 💬 Discord : Serveur communautaire en cours de préparation
 
 ---
