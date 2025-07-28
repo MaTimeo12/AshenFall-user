@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/1394875966924521562/1399402391920709794/image0.png?ex=6888de89&is=68878d09&hm=7e70debf9a69a322985cdf89cfee3e4afba49392d5a0b12239a37ef2a3873f74&" alt="AshenFall Logo" width="300"/>
+</p>
+
 
 # 🌑 AshenFall — Charte Graphique Officielle
 
