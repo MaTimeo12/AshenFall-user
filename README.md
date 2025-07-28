@@ -14,11 +14,11 @@
 
 <br>
 
-<a href="https://www.tiktok.com/@ashenfall">
-  <img src="https://img.shields.io/badge/TikTok-@ashenfall-black?style=for-the-badge&logo=tiktok&logoColor=white" />
+<a href="https://www.tiktok.com/@project.ashenfall">
+  <img src="https://img.shields.io/badge/TikTok-@project.ashenfall-black?style=for-the-badge&logo=tiktok&logoColor=white" />
 </a>
-<a href="mailto:ashenfall.project@gmail.com">
-  <img src="https://img.shields.io/badge/mail-ashenfall.project@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" />
+<a href="https://discord.gg/CTdmWQemqx">
+  <img src="https://img.shields.io/badge/Discord-rejoindre-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
 </a>
 <a href="https://ashenfall.netlify.app">
   <img src="https://img.shields.io/badge/Site-web-en-ligne-6A4BB8?style=for-the-badge&logo=netlify&logoColor=white" />
@@ -109,7 +109,7 @@ Des teintes sombres et mystiques qui reflètent l’ambiance ténébreuse d’As
 |--------------------------|------------------------|
 | 🎨 Direction artistique  | @tonpseudo             |
 | 🛠️ Développement web    | @unautrepseudo         |
-| 📱 Réseaux sociaux       | @ashenfall             |
+| 📱 Réseaux sociaux       | @project.ashenfall     |
 | 👁️ Supervision visuelle | Mattis T.              |
 
 ---
@@ -122,12 +122,3 @@ Vous pouvez partager et adapter les ressources, tant que :
 - vous citez le projet AshenFall,
 - vous ne l’utilisez pas à des fins commerciales,
 - vous conservez la même licence.
-
-📬 Contact
-TikTok : @ashenfall
-
-Email : ashenfall.project@gmail.com
-
-Site : ashenfall.netlify.app
-
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=6A4BB8&height=150&section=footer"/> </p> ```
